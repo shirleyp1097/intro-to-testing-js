@@ -9,5 +9,9 @@ const helloWorld = function() {
 }
 
 function sayHello(input) {
-    return `Hello, ${input}!`;
+    if (typeof input !== 'string') {
+        return "Hello, World!";
+    } else {
+        return `Hello, ${input}!`;
+    }
 }
